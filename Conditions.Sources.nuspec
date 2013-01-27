@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Conditions.Sources</id>
+    <version>$version$</version>
+    <authors>Damian Hickey</authors>
+    <owners></owners>
+    <description>A fork of CuttingEdge.Conditions but distributed as source code instead of a DLL. Useful for library developers who don't wish to have a package dependency.</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/damianh/Conditions</projectUrl>
+    <licenseUrl>https://github.com/damianh/Conditions</licenseUrl>
+    <tags>Guard</tags>
+  </metadata>
+  <files>
+    <file src="build\SampleConsumer\SampleConsumer\content\*.*" target="content\App_Packages\Conditions.$version$" />
+  </files>
+</package>
