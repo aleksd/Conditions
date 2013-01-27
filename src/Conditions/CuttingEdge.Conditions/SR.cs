@@ -25,6 +25,7 @@
 
 using System.Diagnostics;
 using System.Globalization;
+using System.Linq;
 using System.Resources;
 
 namespace CuttingEdge.Conditions
@@ -130,7 +131,7 @@ namespace CuttingEdge.Conditions
         internal const string ValueShouldNotBePositiveInfinity = "ValueShouldNotBePositiveInfinity";
 
         private static readonly ResourceManager resource =
-            new ResourceManager(typeof(SR).Namespace + ".ExceptionMessages", typeof(SR).Assembly);
+            new ResourceManager(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames().Single(r => r.Contains(".ExceptionMessages.")).Replace(".resources", string.Empty), typeof(SR).Assembly);
 
         // Returns a string from the resource.
         internal static string GetString(string name)
