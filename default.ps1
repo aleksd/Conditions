@@ -37,7 +37,6 @@ task TransposeSource {
 		$compile.SetAttribute("Include" , "content\$_")
 		$itemGroup.AppendChild($compile)
 	}
-	gc 
 	gci $buildOutputDir\SampleConsumer\SampleConsumer\content -filter *.resx |% {
 		$embeddedResource = $xml.CreateElement("EmbeddedResource", "http://schemas.microsoft.com/developer/msbuild/2003")
 		$embeddedResource.SetAttribute("Include", "content\$_")
