@@ -1,6 +1,6 @@
 properties { 
 	$projectName = "Conditions"
-	$buildNumber = 1.2
+	$buildNumber = 1.2.0.0
 	$rootDir  = Resolve-Path .\
 	$buildOutputDir = "$rootDir\build"
 	$srcDir = "$rootDir\src\Conditions"
