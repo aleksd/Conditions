@@ -39,7 +39,7 @@ namespace CuttingEdge.Conditions
         OutOfRangeViolation,
 
         /// <summary>
-        /// Lets the Validator optionally throw an <see cref="System.ComponentModel.InvalidEnumArgumentException"/>.
+        /// Lets the Validator optionally throw an <see cref="CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException"/>.
         /// </summary>
         InvalidEnumViolation,
     }
