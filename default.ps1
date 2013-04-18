@@ -21,12 +21,13 @@ task Compile {
 task TransposeSource {
 	mkdir $buildOutputDir\SampleConsumer
 	robocopy $rootDir\SampleConsumer $buildOutputDir\SampleConsumer *.* /S
-	robocopy $srcDir\CuttingEdge.Conditions $buildOutputDir\SampleConsumer\SampleConsumer\content *.cs *.resx
+	robocopy $srcDir\CuttingEdge.Conditions $buildOutputDir\SampleConsumer\SampleConsumer\content *.cs *.resx /S /XD Properties
 	[xml]$xml = gc $buildOutputDir\SampleConsumer\SampleConsumer\SampleConsumer.csproj
 	$itemGroup = $xml.Project.ItemGroup[1]
-	gci $buildOutputDir\SampleConsumer\SampleConsumer\content -filter *.cs |% { 
+	gci $buildOutputDir\SampleConsumer\SampleConsumer\content -recurse -filter *.cs |% { 
 		"Processing $_"
 		Replace-Text $_ "namespace CuttingEdge.Conditions" "namespace Conditions"
+		Replace-Text $_ "using CuttingEdge.Conditions." "using Conditions."
 		Replace-Text $_ "public static partial class" "internal static partial class"
         Replace-Text $_ "public static class" "internal static class"
         Replace-Text $_ "public abstract class" "internal abstract class"
@@ -34,10 +35,11 @@ task TransposeSource {
         Replace-Text $_ "public enum" "internal enum"
         Replace-Text $_ "public interface" "internal interface"
 		$compile = $xml.CreateElement("Compile", "http://schemas.microsoft.com/developer/msbuild/2003")
-		$compile.SetAttribute("Include" , "content\$_")
+		$fileRelPath = $_.FullName.Substring("$buildOutputDir\SampleConsumer\SampleConsumer\".Length)
+		$compile.SetAttribute("Include" , $fileRelPath)
 		$itemGroup.AppendChild($compile)
 	}
-	gci $buildOutputDir\SampleConsumer\SampleConsumer\content -filter *.resx |% {
+	gci $buildOutputDir\SampleConsumer\SampleConsumer\content -recurse -filter *.resx |% {
 		$embeddedResource = $xml.CreateElement("EmbeddedResource", "http://schemas.microsoft.com/developer/msbuild/2003")
 		$embeddedResource.SetAttribute("Include", "content\$_")
 		$itemGroup.AppendChild($embeddedResource)
