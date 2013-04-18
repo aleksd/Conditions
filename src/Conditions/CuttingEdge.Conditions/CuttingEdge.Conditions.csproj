@@ -45,7 +45,7 @@
     <Compile Include="ConstraintViolationType.enum.cs" />
     <Compile Include="DefaultComparer.cs" />
     <Compile Include="EnsuresValidator.cs" />
-    <Compile Include="Exceptions\InvalidEnumArgumentException.cs" />
+    <Compile Include="InvalidEnumArgumentException.cs" />
     <Compile Include="PostconditionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequiresValidator.cs" />
