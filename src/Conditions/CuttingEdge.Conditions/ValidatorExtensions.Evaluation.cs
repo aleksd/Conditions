@@ -25,7 +25,6 @@
 
 using System;
 using System.Linq.Expressions;
-using CuttingEdge.Conditions.Exceptions;
 
 namespace CuttingEdge.Conditions
 {

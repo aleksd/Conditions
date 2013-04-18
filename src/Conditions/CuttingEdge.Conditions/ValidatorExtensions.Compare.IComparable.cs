@@ -25,7 +25,6 @@
 
 using System;
 using System.Collections.Generic;
-using CuttingEdge.Conditions.Exceptions;
 
 namespace CuttingEdge.Conditions
 {

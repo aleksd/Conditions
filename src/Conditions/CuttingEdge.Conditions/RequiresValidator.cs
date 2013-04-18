@@ -24,7 +24,6 @@
 #endregion
 
 using System;
-using CuttingEdge.Conditions.Exceptions;
 
 namespace CuttingEdge.Conditions
 {

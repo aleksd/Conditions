@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CuttingEdge.Conditions.Exceptions
+namespace CuttingEdge.Conditions
 {
     /// <summary>
     /// A custom exception indicating an invalid enum value.

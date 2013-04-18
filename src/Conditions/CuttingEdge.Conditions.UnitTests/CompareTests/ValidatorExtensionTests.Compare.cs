@@ -175,7 +175,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsInRange on System.Enum x with 'lower bound < x > upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsInRangeTest20()
         {
@@ -315,7 +315,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotInRange on Enum with 'lower bound < x > upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsNotInRangeTest20()
         {
@@ -445,7 +445,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsGreaterThan on Enum x with 'lower bound > x' should fail with an InvalidEnumArgumentException.")]
         public void IsGreaterThanTest15()
         {
@@ -561,7 +561,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotGreaterThan on Enum x with 'x > upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsNotGreaterThanTest15()
         {
@@ -683,7 +683,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsGreaterOrEqual on Enum x with 'lower bound < x' should fail with an InvalidEnumArgumentException.")]
         public void IsGreaterOrEqualTest17()
         {
@@ -800,7 +800,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotGreaterOrEqual on Enum x with 'x = upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsNotGreaterOrEqualTest16()
         {
@@ -914,7 +914,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsLessThan on Enum x with 'x < upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsLessThanTest15()
         {
@@ -1009,7 +1009,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotLessThan on Enum x with 'lower bound > x' should fail with an InvalidEnumArgumentException.")]
         public void IsNotLessThanTest14()
         {
@@ -1140,7 +1140,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsLessOrEqual on Enum x with 'x > upper bound' should fail with an InvalidEnumArgumentException.")]
         public void IsLessOrEqualTest16()
         {
@@ -1256,7 +1256,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotLessOrEqual on Enum x with 'lower bound = x' should fail with an InvalidEnumArgumentException.")]
         public void IsNotLessOrEqualTest15()
         {
@@ -1360,7 +1360,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsEqualTo on Enum x with 'x != other' should fail with an InvalidEnumArgumentException.")]
         public void IsEqualToTest14()
         {
@@ -1456,7 +1456,7 @@ namespace CuttingEdge.Conditions.UnitTests.CompareTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling IsNotEqualTo on Enum x with 'x == other' should fail with an InvalidEnumArgumentException.")]
         public void IsNotEqualToTest14()
         {

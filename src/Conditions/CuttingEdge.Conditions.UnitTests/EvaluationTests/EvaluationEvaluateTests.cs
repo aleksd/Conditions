@@ -129,7 +129,7 @@ namespace CuttingEdge.Conditions.UnitTests.EvaluationTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling Evaluate on enum x with boolean 'false' should fail with InvalidEnumArgumentException.")]
         public void EvaluateTest12()
         {
@@ -138,7 +138,7 @@ namespace CuttingEdge.Conditions.UnitTests.EvaluationTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(CuttingEdge.Conditions.Exceptions.InvalidEnumArgumentException))]
+        [ExpectedException(typeof(InvalidEnumArgumentException))]
         [Description("Calling Evaluate on enum x with expression 'x => false' should fail with InvalidEnumArgumentException.")]
         public void EvaluateTest13()
         {
