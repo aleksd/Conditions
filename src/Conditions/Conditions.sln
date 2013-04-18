@@ -13,18 +13,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuttingEdge.Conditions.UnitTests", "CuttingEdge.Conditions.UnitTests\CuttingEdge.Conditions.UnitTests.csproj", "{5E3699BE-95DA-439D-BDFD-63DC76F56A3A}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs02
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CuttingEdge.Conditions.UnitTests\\CuttingEdge.Conditions.UnitTests.csproj
-		SccProjectName1 = CuttingEdge.Conditions.UnitTests
-		SccLocalPath1 = CuttingEdge.Conditions.UnitTests
-		SccProjectUniqueName2 = CuttingEdge.Conditions\\CuttingEdge.Conditions.csproj
-		SccProjectName2 = CuttingEdge.Conditions
-		SccLocalPath2 = CuttingEdge.Conditions
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
