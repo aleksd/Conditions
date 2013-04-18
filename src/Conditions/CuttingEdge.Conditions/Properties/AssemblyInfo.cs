@@ -33,14 +33,6 @@ using System.Security;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9940fac9-29c4-4896-a2c1-13f64aff0bf9")]
-
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
@@ -56,8 +48,6 @@ using System.Security;
 
 [assembly: CLSCompliant(true)]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
-
-[assembly: AllowPartiallyTrustedCallers]
 
 [module: SuppressMessage("Microsoft.Naming", "CA1703:ResourceStringsShouldBeSpelledCorrectly", 
     Scope = "resource", Target = "CuttingEdge.Conditions.ExceptionMessages.resources",

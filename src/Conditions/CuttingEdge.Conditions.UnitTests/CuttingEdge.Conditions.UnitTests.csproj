@@ -137,12 +137,6 @@
     <Compile Include="UseCases\UseCaseTestHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CuttingEdge.Conditions\CuttingEdge.Conditions.csproj">
-      <Project>{914B3EA8-2D78-4B1D-BA98-575817EB20F6}</Project>
-      <Name>CuttingEdge.Conditions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
@@ -163,6 +157,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CuttingEdge.Conditions\CuttingEdge.Conditions.csproj">
+      <Project>{938814BA-AE22-4B96-AD41-FA552FE9B738}</Project>
+      <Name>CuttingEdge.Conditions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
